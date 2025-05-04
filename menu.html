@@ -1,1 +1,168 @@
-<h1>Coming Soon!</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Menu</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    .menu-section-wrapper {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #f8e1d4, #f5c6aa);
+      color: #4e342e;
+      animation: backgroundAnimation 10s ease infinite alternate;
+    }
+
+    @keyframes backgroundAnimation {
+      from {
+        background-position: 0% 50%;
+      }
+
+      to {
+        background-position: 100% 50%;
+      }
+    }
+
+    .menu-section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .menu-section h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 50px;
+      color: #6d4c41;
+      text-shadow: 2px 2px #ffe0b2;
+    }
+
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .menu-container .menu-item {
+      background-color: #ffffff;
+      border: 2px solid #ffe0b2;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s, box-shadow 0.4s, border 0.4s;
+      position: relative;
+    }
+
+    .menu-container .menu-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+      border: 2px solid #ffb74d;
+    }
+
+    .menu-container .menu-item h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      transition: color 0.3s;
+    }
+
+    .menu-container .menu-item p {
+      margin-bottom: 15px;
+    }
+
+    .menu-container .price {
+      background-color: #ffb74d;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1rem;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      box-shadow: 0 0 10px #ffb74d;
+    }
+
+    .menu-container .order-btn {
+      background-color: #6d4c41;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .menu-container .order-btn:hover {
+      background-color: #a1887f;
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- This wrapper ensures isolation from the rest of index.html -->
+  <div class="menu-section-wrapper">
+
+    <section class="menu-section">
+      <h1>☕ Our Coffee Menu ☕</h1>
+
+      <div class="menu-container">
+
+        <div class="menu-item">
+          <h2>☕ Espresso</h2>
+          <p>Strong, bold shot of coffee.</p>
+          <span class="price">$3.00</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+
+        <div class="menu-item">
+          <h2>🍶 Cappuccino</h2>
+          <p>Espresso with steamed milk foam.</p>
+          <span class="price">$4.00</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+
+        <div class="menu-item">
+          <h2>🥛 Latte</h2>
+          <p>Espresso with steamed milk.</p>
+          <span class="price">$4.50</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+
+        <div class="menu-item">
+          <h2>🍫 Mocha</h2>
+          <p>Espresso with chocolate and milk.</p>
+          <span class="price">$5.00</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+
+        <div class="menu-item">
+          <h2>💧 Americano</h2>
+          <p>Espresso diluted with hot water.</p>
+          <span class="price">$3.50</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+
+        <div class="menu-item">
+          <h2>🍯 Macchiato</h2>
+          <p>Espresso with a dash of milk foam.</p>
+          <span class="price">$4.20</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+</body>
+
+</html>
